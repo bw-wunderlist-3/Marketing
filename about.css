@@ -112,18 +112,68 @@ q {
 
 /* Begin main CSS */
 
+/**************
+****HEADER*****
+**************/
+nav.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    margin: 0 4%;
+  }
+  
+  nav.topnav a {
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    font-weight: 600;
+  }
+  
+  div.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+  }
+  
+  nav.topnav a.menu-contact {
+    color: blue;
+  }
+
+
+
+.image-break {
+    display: flex;
+    justify-content: center;
+    background-color:lightgrey;
+}
+
+.image-break img {
+    width: 15%;
+    
+}
+  /**************
+****BODY*****
+**************/
+
 .about-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2%, 15%;
+    padding: 22%, 15%;
     margin-left: 10%;
     margin-right: 10%;
+    background: gray;
 }
 
 .about-container p {
     margin-bottom: 5%;
 }
+
+/**************
+****FOOTER*****
+**************/
+
 footer {
     border:black, 2%;
     background-color:lightgrey;
@@ -146,7 +196,7 @@ footer {
 .social-container img {
     display: flex;
     justify-content: center;
-    width: 8%;
+    width: 11%;
     margin-left: 48%;
     /* justify-content: space-around; */
 }
