@@ -1,5 +1,8 @@
-* {
+/* * {
   border: 1px solid gray;
+} */
+h2 {
+  font-size: 2.6rem;
 }
 
 /**************
@@ -15,7 +18,8 @@ nav.topnav {
 
 nav.topnav a {
   text-decoration: none;
-  color: black;
+  color: rgb(39, 39, 39);
+  font-weight: 600;
 }
 
 div.top-menu {
@@ -32,3 +36,34 @@ nav.topnav a.menu-contact {
 /**************
 *****Hero******
 ***************/
+.hero-section {
+  height: 70vh;
+  width: 100%;
+  background-color: rgba(233, 233, 233, 0.377);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 50px 0 100px;
+}
+
+/******************
+*****Features******
+*******************/
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2% 4%;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.459);
+  border-radius: 10px;
+  height: 35vh;
+  width: 10%;
+}
