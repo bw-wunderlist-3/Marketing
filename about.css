@@ -111,13 +111,29 @@ q {
 }
 
 /* Begin main CSS */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%, 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.about-container p {
+    margin-bottom: 5%;
+}
 footer {
+    border:black, 2%;
     background-color:lightgrey;
 }
 .footer-container {
     display: flex;
     justify-content: space-evenly;
     padding: 2%;
+   
+   
 
 }
 
