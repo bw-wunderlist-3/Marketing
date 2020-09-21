@@ -1,0 +1,34 @@
+* {
+  border: 1px solid gray;
+}
+
+/**************
+****HEADER*****
+**************/
+nav.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  margin: 0 4%;
+}
+
+nav.topnav a {
+  text-decoration: none;
+  color: black;
+}
+
+div.top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+}
+
+nav.topnav a.menu-contact {
+  color: blue;
+}
+
+/**************
+*****Hero******
+***************/
