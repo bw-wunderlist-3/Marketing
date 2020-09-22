@@ -1,3 +1,93 @@
+/* * {
+  
+  border: 1px solid gray;
+} */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+p {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 4%;
+  color: #594a4e;
+}
+
+h2 {
+  font-size: 3.6rem;
+  text-align: left;
+  margin-left: 8%;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/**************
+****HEADER*****
+**************/
+.logo {
+  background-image: url('images/Wunderlist_Logo.png');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+nav.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  margin: 0 4%;
+}
+
+nav.topnav a {
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+  font-weight: 600;
+}
+
+div.top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+}
+
+nav.topnav a.menu-contact {
+  color: blue;
+}
+
+/***************
+***BIO SECTION**
+***************/
+.bio-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin: 4%;
+  /* background-color: gray; */
+}
+
+.bio-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
+}
+
 /**************
 ****FOOTER*****
 **************/
@@ -11,9 +101,6 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 2%;
-
-
-
 }
 
 .footer-container h3 {
