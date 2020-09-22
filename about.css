@@ -195,6 +195,12 @@ nav.topnav {
     margin-bottom: 5%;
 }
 
+.about-container img {
+    width: 25%;
+    margin-left: 7%;
+    border: 3px solid black;
+    border-radius: 8px;
+}
 /**************
 ****FOOTER*****
 **************/
@@ -242,4 +248,55 @@ footer {
 
 .social-container img:hover {
     width: 15%;
+}
+
+/* *****media styles***** */
+
+@media (max-width:800px){
+
+    h2 {
+        font-size: 2.6rem;
+        text-align: center;
+        margin-left: 8%;
+    }
+
+    .about-container img {
+        width: 25%;
+        margin-left: 39%;
+        border: 3px solid black;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .social-container img {
+        display: flex;
+        justify-content: center;
+        width: 15%;
+        margin-left: 48%;
+        /* justify-content: space-around; */
+    }
+
+    .social-container img:hover {
+        width: 18%;
+    }
+}
+
+@media (max-width:500px) {
+
+    .about-container img {
+        width: 33%;
+        margin-left: 34%;
+       
+    }
+
+    .social-container img {
+        width: 22%;
+        
+    }
+
+    .social-container img:hover {
+        width: 25%;
+    }
 }
