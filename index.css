@@ -5,6 +5,10 @@ h2 {
   font-size: 2.6rem;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 /**************
 ****HEADER*****
 **************/
@@ -56,10 +60,16 @@ nav.topnav a.menu-contact {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 2% 0;
+}
+
+.features-section h2 {
+  margin: 2%;
 }
 
 .feature-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 2% 4%;
@@ -71,7 +81,60 @@ nav.topnav a.menu-contact {
   justify-content: center;
   align-items: center;
   background-color: rgba(240, 240, 240, 0.459);
-  border-radius: 10px;
+  border-radius: 20px;
   height: 35vh;
-  width: 10%;
+  width: 15%;
+}
+
+/*******************
+*******ABOUT********
+*******************/
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4% 0;
+  /* border-bottom: .5rem dotted black; */
+}
+
+
+.about-section p {
+  width: 50%;
+  margin: 1% 0 2% 0;
+}
+
+/*******************
+********TEAM********
+*******************/
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4% 0;
+}
+
+.team-section p {
+  width: 50%;
+  margin: 1% 0 2% 0;
+}
+
+/*******************
+******CONTACT*******
+*******************/
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4% 0;
+}
+
+.contact-section p {
+  width: 50%;
+  margin: 1% 0 2% 0;
 }
