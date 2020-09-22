@@ -110,6 +110,26 @@ q {
   quotes: """";
 }
 
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;	
+}
+h1, h2, p {	
+    font-family: 'Raleway', sans-serif;	
+    text-align: center;	
+    margin: 4%;	
+}
+
+h2 {
+    font-size: 3.6rem;
+    text-align: left;
+    margin-left: 8%;
+}
+
 /* Begin main CSS */
 
 /**************
@@ -160,13 +180,18 @@ nav.topnav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 22%, 15%;
+    /* padding: 2%, 15%; */
     margin-left: 10%;
     margin-right: 10%;
     background: gray;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 6px;
 }
 
+
 .about-container p {
+    padding: 2%, 80%;
     margin-bottom: 5%;
 }
 
@@ -187,6 +212,20 @@ footer {
 
 }
 
+.footer-container h3 {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.footer-container h3:hover {
+    background: black;
+    color: lightgray;
+}
+
+.footer-container a {
+    text-decoration: none;
+}
 .social-container {
     display: flex;
     justify-content: space-around;
@@ -199,4 +238,8 @@ footer {
     width: 11%;
     margin-left: 48%;
     /* justify-content: space-around; */
+}
+
+.social-container img:hover {
+    width: 15%;
 }
