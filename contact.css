@@ -160,7 +160,16 @@ nav.topnav {
     color: blue;
   }
 
+  .image-break {
+    display: flex;
+    justify-content: center;
+    background-color:#33272a;
+}
 
+.image-break img {
+    width: 15%;
+    
+}
 
 
   /**************

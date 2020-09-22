@@ -116,15 +116,20 @@ html{
 body{
     font-size:1.6rem;
     line-height: 1.5;
-    font-family: 'Raleway', sans-serif;	
 }
 h1, h2, p {	
-    font-family: 'Raleway', sans-serif;	
     text-align: center;	
     margin: 4%;	
     color: #594a4e;
 }
 
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, li {
+    font-family: 'Zilla Slab', serif;
+}
 h2 {
     font-size: 3.6rem;
     text-align: left;
@@ -224,11 +229,13 @@ footer {
     border: 2px solid black;
     border-radius: 8px;
     padding: 6px;
+    text-decoration: none;
 }
 
 .footer-container h3:hover {
     background: #ff8ba7;
-    color: lightgray;
+    color: #c3f0ca;
+    text-decoration: none;
 }
 
 .footer-container a {
@@ -250,8 +257,12 @@ footer {
 
 .social-container img:hover {
     width: 15%;
+    background: #ff8ba7;
 }
 
+li:hover {
+    text-decoration:underline;
+}
 /* *****media styles***** */
 
 @media (max-width:800px){
