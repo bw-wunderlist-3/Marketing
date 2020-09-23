@@ -141,7 +141,15 @@ h2 {
 /**************
 ****HEADER*****
 **************/
-nav.topnav {
+.logo {
+    background-image: url('images/Wunderlist_Logo.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  nav.topnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -165,7 +173,6 @@ nav.topnav {
   nav.topnav a.menu-contact {
     color: blue;
   }
-
 
 
 .image-break {
@@ -266,6 +273,19 @@ li:hover {
 /* *****media styles***** */
 
 @media (max-width:800px){
+        /*****************
+    *****TOP MENU ****
+    *****************/
+
+    div.top-menu a {
+        margin: 0 3%;
+    }
+
+    nav.topnav {
+        width: 90%;
+    }
+
+
 
     h2 {
         font-size: 2.6rem;
@@ -297,6 +317,11 @@ li:hover {
 }
 
 @media (max-width:500px) {
+
+    div.top-menu a {
+        margin: 0 3%;
+      }
+    
 
     .about-container img {
         width: 33%;
