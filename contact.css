@@ -229,8 +229,8 @@ h2 {
 **************/
 
 footer {
-    border:black, 2%;
-    background-color:#594a4e;
+    border: black, 2%;
+    background-color:lightgrey;
 }
 .footer-container {
     display: flex;
