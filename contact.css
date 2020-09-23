@@ -172,7 +172,9 @@ h2 {
   nav.topnav a.menu-contact {
     color: blue;
   }
-
+/**************
+****LOGO BREAK*****
+**************/
   .image-break {
     display: flex;
     justify-content: center;
@@ -186,7 +188,9 @@ h2 {
     padding: 2% 0;
     
 }
-
+/**************
+****CONTACT BOXES*****
+**************/
 .contact-container p {
     display: flex;
     flex-wrap: wrap;
@@ -247,6 +251,10 @@ footer {
 .footer-container a {
     text-decoration: none;
 }
+
+/**************
+****SOCIAL BUTTONS*****
+**************/
 .social-container {
     display: flex;
     justify-content: space-around;
@@ -297,7 +305,9 @@ footer {
         align-items: center;
     }
 
-
+/**************
+****SOCIAL BUTTONS*****
+**************/
     .social-container img {
         display: flex;
         justify-content: center;
@@ -312,18 +322,24 @@ footer {
 }
 
 @media (max-width:500px) {
-
+/**************
+****NAV*****
+**************/
     div.top-menu a {
         margin: 0 3%;
       }
     
-
+/**************
+****LOGO BREAK*****
+**************/
     .about-container img {
         width: 33%;
         margin-left: 34%;
        
     }
-
+/**************
+****SOCIAL BUTTONS*****
+**************/
     .social-container img {
         width: 22%;
         

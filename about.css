@@ -174,7 +174,9 @@ h2 {
     color: blue;
   }
 
-
+/**************
+****LOGO BREAK*****
+**************/
 .image-break {
     display: flex;
     justify-content: center;
@@ -295,7 +297,9 @@ li:hover {
         text-align: center;
         margin-left: 8%;
     }
-
+/**************
+****LOGO BREAK*****
+**************/
     .about-container img {
         width: 25%;
         margin-left: 39%;
@@ -305,7 +309,9 @@ li:hover {
         align-items: center;
     }
 
-
+/**************
+****SOCIAL BUTTONS*****
+**************/
     .social-container img {
         display: flex;
         justify-content: center;
@@ -320,18 +326,24 @@ li:hover {
 }
 
 @media (max-width:500px) {
-
+/**************
+****NAV*****
+**************/
     div.top-menu a {
         margin: 0 3%;
       }
     
-
+/**************
+****LOGO BREAK*****
+**************/
     .about-container img {
         width: 33%;
         margin-left: 34%;
        
     }
-
+/**************
+****SOCIAL BUTTONS*****
+**************/
     .social-container img {
         width: 22%;
         
