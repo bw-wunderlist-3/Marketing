@@ -140,7 +140,15 @@ h2 {
 /**************
 ****HEADER*****
 **************/
-nav.topnav {
+.logo {
+    background-image: url('images/Wunderlist_Logo.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  nav.topnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -164,7 +172,9 @@ nav.topnav {
   nav.topnav a.menu-contact {
     color: blue;
   }
-
+/**************
+****LOGO BREAK*****
+**************/
   .image-break {
     display: flex;
     justify-content: center;
@@ -172,10 +182,15 @@ nav.topnav {
 }
 
 .image-break img {
-    width: 15%;
+    width: 65%;
+    height: 140px;
+    border-radius: 20%;
+    padding: 2% 0;
     
 }
-
+/**************
+****CONTACT BOXES*****
+**************/
 .contact-container p {
     display: flex;
     flex-wrap: wrap;
@@ -236,6 +251,10 @@ footer {
 .footer-container a {
     text-decoration: none;
 }
+
+/**************
+****SOCIAL BUTTONS*****
+**************/
 .social-container {
     display: flex;
     justify-content: space-around;
@@ -258,6 +277,19 @@ footer {
 
 @media (max-width:800px){
 
+
+        /*****************
+    *****TOP MENU ****
+    *****************/
+
+    div.top-menu a {
+        margin: 0 3%;
+    }
+
+    nav.topnav {
+        width: 90%;
+    }
+
     h2 {
         font-size: 2.6rem;
         text-align: center;
@@ -273,7 +305,20 @@ footer {
         align-items: center;
     }
 
+        /**************
+****CONTACT SEC*****
+**************/
+.customer-container {
+    text-align: center;
+    padding: 2% 2%;
+}
 
+.customer-container div {
+    border-radius: 15%;
+}
+/**************
+****SOCIAL BUTTONS*****
+**************/
     .social-container img {
         display: flex;
         justify-content: center;
@@ -288,13 +333,42 @@ footer {
 }
 
 @media (max-width:500px) {
-
+/**************
+****NAV*****
+**************/
+    div.top-menu a {
+        margin: 0 3%;
+      }
+    
+/**************
+****LOGO BREAK*****
+**************/
     .about-container img {
         width: 33%;
         margin-left: 34%;
        
     }
+/**************
+****CONTACT TITLE*****
+**************/
+    .contact-container {
+        text-align: center;
+    }
 
+    /**************
+****CONTACT SEC*****
+**************/
+    .customer-container {
+        text-align: center;
+        padding: 2% 2%;
+    }
+
+    .customer-container div {
+        border-radius: 10%;
+    }
+/**************
+****SOCIAL BUTTONS*****
+**************/
     .social-container img {
         width: 22%;
         
