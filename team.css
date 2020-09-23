@@ -1,4 +1,4 @@
-TEAM.CSS html,
+html,
 body,
 div,
 span,
@@ -135,10 +135,12 @@ h2 {
   font-size: 3.6rem;
   text-align: left;
   margin-left: 8%;
+  color: #594A4E
 }
 
 h3 {
   font-size: 2rem;
+  color: #594A4E
 }
 
 /**************
@@ -210,6 +212,10 @@ div.bio-hero div.logo {
   margin: .5%;
 }
 
+p.hero-text {
+  width: 50%;
+}
+
 /****** MAIN SECTION (row of 3) ******/
 .bio-section {
   display: flex;
@@ -219,20 +225,32 @@ div.bio-hero div.logo {
 }
 
 .left-container {
-  background-color: red;
+  background-color: rgba(233, 233, 233, 0.377);
+  background-image: url('images/1\ SCENE.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left center;
+  background-size: contain;
   width: 25%;
-  height: 100vh;
+  height: 140vh;
   margin: 0;
 }
 
 .right-container {
-  background-color: blue;
+  background-color: rgba(233, 233, 233, 0.377);
+  background-image: url('images/1\ SCENE.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right 50px;
+  background-size: contain;
   width: 25%;
-  height: 100vh;
+  height: 140vh;
 }
 
 .bio-container {
-  margin-top: 8%;
+  width: 100%;
+  height: 120vh;
+  border-radius: 25px;
 }
 
 .bio-block {
@@ -240,13 +258,31 @@ div.bio-hero div.logo {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 4%;
+  margin: 4% 0 0 0;
+  width: 100%;
 }
+
+.bio-block h2 {
+  margin: 0;
+}
+
 
 .bios {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  border: 1px solid #594A4E;
+  margin: 2%;
+  border-radius: 50rem;
+  padding: 1%;
 }
 
 /**************
@@ -255,13 +291,17 @@ div.bio-hero div.logo {
 
 footer {
   border: black, 2%;
-  background-color: #c3f0ca;
+  background-color: #594a4e;
+  ;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-evenly;
   padding: 2%;
+
+
+
 }
 
 .footer-container h3 {
@@ -272,11 +312,13 @@ footer {
 
 .footer-container h3:hover {
   background: #ff8ba7;
-  color: lightgray;
+  color: rgba(233, 233, 233, 0.377);
+  ;
 }
 
 .footer-container a {
   text-decoration: none;
+  color: rgba(233, 233, 233, 0.377);
 }
 
 .social-container {
@@ -328,6 +370,14 @@ footer {
   .social-container img:hover {
     width: 18%;
   }
+
+  nav.topnav {
+    width: 80%;
+  }
+
+  div.top-menu a {
+    margin: 0 3%;
+  }
 }
 
 @media (max-width:500px) {
@@ -345,5 +395,9 @@ footer {
 
   .social-container img:hover {
     width: 25%;
+  }
+
+  nav.topnav {
+    width: 75%;
   }
 }
