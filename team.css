@@ -219,20 +219,30 @@ div.bio-hero div.logo {
 }
 
 .left-container {
-  background-color: red;
+  background-color: rgba(233, 233, 233, 0.377);
+  background-image: url('images/1\ SCENE.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left center;
+  background-size: contain;
   width: 25%;
   height: 100vh;
   margin: 0;
 }
 
 .right-container {
-  background-color: blue;
+  background-color: rgba(233, 233, 233, 0.377);
+  background-image: url('images/1\ SCENE.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right center;
+  background-size: cover;
   width: 25%;
   height: 100vh;
 }
 
 .bio-container {
-  margin-top: 8%;
+  margin: 8% 0 0 0;
 }
 
 .bio-block {
@@ -240,12 +250,25 @@ div.bio-hero div.logo {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 4%;
+  margin: 4% 0 0 0;
+  width: 100%;
 }
+
+/* .bio-block h3,
+.bio-block div.bios,
+.bio-block div.bios div.bio,
+.bio-block div.bios div.bio p {
+  width: 100%;
+  margin: 0;
+} */
 
 .bios {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.bio {
   width: 100%;
 }
 
