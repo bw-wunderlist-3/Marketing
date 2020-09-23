@@ -1,7 +1,117 @@
-/* * {
-  
-  border: 1px solid gray;
-} */
+TEAM.CSS html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+body {
+  background: white;
+  line-height: 1;
+  color: black;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: """";
+}
+
+/* Begin main CSS */
+
+
 html {
   font-size: 62.5%;
 }
@@ -34,6 +144,11 @@ h3 {
 /**************
 ****HEADER*****
 **************/
+.top-bar {
+  height: 5vh;
+  background-color: #594a4e;
+}
+
 .logo {
   background-image: url('images/Wunderlist_Logo.png');
   height: 100%;
@@ -64,28 +179,74 @@ div.top-menu {
 }
 
 nav.topnav a.menu-contact {
-  color: blue;
+  color: #ff8ba7;
 }
 
 /***************
 ***BIO SECTION**
 ***************/
+/******* HERO CONTAINER CSS ******/
 .bio-hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20vh;
-  margin: 4%;
+  height: 60vh;
+  /* margin-top: 1%; */
+  background-color: rgba(233, 233, 233, 0.377);
   /* background-color: gray; */
+}
+
+div.bio-hero div.logo {
+  background-image: url('images/Wunderlist_Logo.png');
+  height: 8rem;
+  width: 8rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bio-hero h2,
+.bio-hero p {
+  margin: .5%;
+}
+
+/****** MAIN SECTION (row of 3) ******/
+.bio-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-container {
+  background-color: red;
+  width: 25%;
+  height: 100vh;
+  margin: 0;
+}
+
+.right-container {
+  background-color: blue;
+  width: 25%;
+  height: 100vh;
+}
+
+.bio-container {
+  margin-top: 8%;
 }
 
 .bio-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 4%;
+}
+
+.bios {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /**************

@@ -95,6 +95,7 @@ nav.topnav a.menu-contact {
   width: 100%;
   /* background-color: rgba(233, 233, 233, 0.377); */
   background-image: url('images/9\ SCENE.svg');
+  /* background-attachment: fixed; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,12 +188,14 @@ a.button1:hover {
   background-image: url('images/5\ SCENE.svg');
   background-repeat: no-repeat;
   background-position: bottom center;
+  /* background-attachment: fixed; */
 }
 
 .feature-block.create {
   background-image: url('images/8\ SCENE.svg');
   background-repeat: no-repeat;
   background-position: bottom center;
+  /* background-attachment: fixed; */
 }
 
 .feature-block.edit {
