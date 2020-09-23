@@ -57,44 +57,44 @@ fieldset,
 form,
 label,
 legend {
-  vertical-align: baseline;
-  font-family: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  outline: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 /* remember to define focus styles! */
 :focus {
-  outline: 0;
+    outline: 0;
 }
 
 body {
-  background: white;
-  line-height: 1;
-  color: black;
+    background: white;
+    line-height: 1;
+    color: black;
 }
 
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 /* tables still need cellspacing="0" in the markup */
 table {
-  border-collapse: separate;
-  border-spacing: 0;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
 caption,
 th,
 td {
-  font-weight: normal;
-  text-align: left;
+    font-weight: normal;
+    text-align: left;
 }
 
 /* remove possible quote marks (") from <q> & <blockquote> */
@@ -102,26 +102,38 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+    content: "";
 }
 
 blockquote,
 q {
-  quotes: """";
+    quotes: """";
 }
 
-html{
-    font-size:62.5%;
+html {
+    font-size: 62.5%;
 }
-body{
-    font-size:1.6rem;
+
+body {
+    font-size: 1.6rem;
     line-height: 1.5;
-    font-family: 'Raleway', sans-serif;	
+    font-family: 'Raleway', sans-serif;
 }
-h1, h2, p {	
-    font-family: 'Raleway', sans-serif;	
-    text-align: center;	
-    margin: 4%;	
+
+h1 {
+    font-size: 4.8rem;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p,
+li {
+    font-family: 'Zilla Slab', serif;
 }
 
 h2 {
@@ -135,48 +147,105 @@ h2 {
 /**************
 ****HEADER*****
 **************/
+.logo {
+    background-image: url('images/Wunderlist_Logo.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 nav.topnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 8vh;
     margin: 0 4%;
-  }
-  
-  nav.topnav a {
+}
+
+nav.topnav a {
     text-decoration: none;
     color: rgb(39, 39, 39);
     font-weight: 600;
-  }
-  
-  div.top-menu {
+}
+
+div.top-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 55%;
-  }
-  
-  nav.topnav a.menu-contact {
+}
+
+nav.topnav a.menu-contact {
     color: blue;
-  }
+}
 
+/**************
+****LOGO BREAK*****
+**************/
+.image-break {
+    display: flex;
+    justify-content: center;
+    background-color: #33272a;
+}
 
+.image-break img {
+    width: 65%;
+    height: 140px;
+    border-radius: 20%;
+    padding: 2% 0;
 
+}
 
-  /**************
+/**************
+****CONTACT BOXES*****
+**************/
+.contact-container p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+
+.customer-container {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.customer-container div {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    border-radius: 20%;
+    font-size: 1.8rem;
+}
+
+.new,
+.anything {
+    background-color: #ff8ba7;
+
+}
+
+.existing {
+    background-color: #c3f0ca;
+}
+
+/**************
 ****FOOTER*****
 **************/
 
 footer {
-    border:black, 2%;
-    background-color:lightgrey;
+    border: black, 2%;
+    background-color: lightgrey;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-evenly;
     padding: 2%;
-   
-   
+
+
 
 }
 
@@ -194,6 +263,10 @@ footer {
 .footer-container a {
     text-decoration: none;
 }
+
+/**************
+****SOCIAL BUTTONS*****
+**************/
 .social-container {
     display: flex;
     justify-content: space-around;
@@ -214,7 +287,20 @@ footer {
 
 /* *****media styles***** */
 
-@media (max-width:800px){
+@media (max-width:800px) {
+
+
+    /*****************
+    *****TOP MENU ****
+    *****************/
+
+    div.top-menu a {
+        margin: 0 3%;
+    }
+
+    nav.topnav {
+        width: 90%;
+    }
 
     h2 {
         font-size: 2.6rem;
@@ -231,7 +317,21 @@ footer {
         align-items: center;
     }
 
+    /**************
+****CONTACT SEC*****
+**************/
+    .customer-container {
+        text-align: center;
+        padding: 2% 2%;
+    }
 
+    .customer-container div {
+        border-radius: 15%;
+    }
+
+    /**************
+****SOCIAL BUTTONS*****
+**************/
     .social-container img {
         display: flex;
         justify-content: center;
@@ -247,15 +347,47 @@ footer {
 
 @media (max-width:500px) {
 
+    /**************
+****NAV*****
+**************/
+    div.top-menu a {
+        margin: 0 3%;
+    }
+
+    /**************
+****LOGO BREAK*****
+**************/
     .about-container img {
         width: 33%;
         margin-left: 34%;
-       
+
     }
 
+    /**************
+****CONTACT TITLE*****
+**************/
+    .contact-container {
+        text-align: center;
+    }
+
+    /**************
+****CONTACT SEC*****
+**************/
+    .customer-container {
+        text-align: center;
+        padding: 2% 2%;
+    }
+
+    .customer-container div {
+        border-radius: 10%;
+    }
+
+    /**************
+****SOCIAL BUTTONS*****
+**************/
     .social-container img {
         width: 22%;
-        
+
     }
 
     .social-container img:hover {
