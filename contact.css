@@ -124,18 +124,17 @@ h1 {
     font-size: 4.8rem;
     text-align: center;
 }
-
-h1,
-h2,
-h3 {
+h1 {
+    font-size: 4.8rem;
+    text-align: center;
+}
+h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
 
-p,
-li {
+p, li {
     font-family: 'Zilla Slab', serif;
 }
-
 h2 {
     font-size: 3.6rem;
     text-align: left;
@@ -153,9 +152,9 @@ h2 {
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-nav.topnav {
+  }
+  
+  nav.topnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,15 +177,14 @@ div.top-menu {
 
 nav.topnav a.menu-contact {
     color: blue;
-}
-
+  }
 /**************
 ****LOGO BREAK*****
 **************/
-.image-break {
+  .image-break {
     display: flex;
     justify-content: center;
-    background-color: #33272a;
+    background-color:#33272a;
 }
 
 .image-break img {
@@ -194,9 +192,8 @@ nav.topnav a.menu-contact {
     height: 140px;
     border-radius: 20%;
     padding: 2% 0;
-
+    
 }
-
 /**************
 ****CONTACT BOXES*****
 **************/
@@ -221,17 +218,15 @@ nav.topnav a.menu-contact {
     font-size: 1.8rem;
 }
 
-.new,
-.anything {
+.new, .anything {
     background-color: #ff8ba7;
-
+    
 }
 
 .existing {
     background-color: #c3f0ca;
 }
-
-/**************
+  /**************
 ****FOOTER*****
 **************/
 
@@ -302,6 +297,19 @@ footer {
         width: 90%;
     }
 
+
+        /*****************
+    *****TOP MENU ****
+    *****************/
+
+    div.top-menu a {
+        margin: 0 3%;
+    }
+
+    nav.topnav {
+        width: 90%;
+    }
+
     h2 {
         font-size: 2.6rem;
         text-align: center;
@@ -317,19 +325,18 @@ footer {
         align-items: center;
     }
 
-    /**************
+        /**************
 ****CONTACT SEC*****
 **************/
-    .customer-container {
-        text-align: center;
-        padding: 2% 2%;
-    }
+.customer-container {
+    text-align: center;
+    padding: 2% 2%;
+}
 
-    .customer-container div {
-        border-radius: 15%;
-    }
-
-    /**************
+.customer-container div {
+    border-radius: 15%;
+}
+/**************
 ****SOCIAL BUTTONS*****
 **************/
     .social-container img {
@@ -346,15 +353,14 @@ footer {
 }
 
 @media (max-width:500px) {
-
-    /**************
+/**************
 ****NAV*****
 **************/
     div.top-menu a {
         margin: 0 3%;
-    }
-
-    /**************
+      }
+    
+/**************
 ****LOGO BREAK*****
 **************/
     .about-container img {
@@ -362,8 +368,7 @@ footer {
         margin-left: 34%;
 
     }
-
-    /**************
+/**************
 ****CONTACT TITLE*****
 **************/
     .contact-container {
@@ -381,8 +386,7 @@ footer {
     .customer-container div {
         border-radius: 10%;
     }
-
-    /**************
+/**************
 ****SOCIAL BUTTONS*****
 **************/
     .social-container img {
