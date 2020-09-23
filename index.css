@@ -354,21 +354,17 @@ footer {
   *****TOP MENU ****
   *****************/
 
-  div.top-menu a {
-    margin: 0 3%;
-  }
-
   div.top-menu a.log-in {
     margin-right: 2%;
     width: 100%;
   }
 
-  /* nav.topnav div.top-menu a {
-    margin: 0 2%;
-  } */
-
   nav.topnav {
-    width: 90%;
+    width: 80%;
+  }
+
+  div.top-menu a {
+    margin: 0 3%;
   }
 
   /***************
@@ -434,6 +430,10 @@ footer {
 
   div.top-menu a {
     margin: 0 3%;
+  }
+
+  nav.topnav {
+    width: 75%;
   }
 
 }
