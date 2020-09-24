@@ -141,37 +141,37 @@ h2 {
 ****HEADER*****
 **************/
 .logo {
-  background-image: url('images/Wunderlist_Logo.png');
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-nav.topnav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 8vh;
-  margin: 0 4%;
+    background-image: url('images/Wunderlist_Logo.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  nav.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    margin: 0 4%;
 }
 
 nav.topnav a {
-  text-decoration: none;
-  color: rgb(39, 39, 39);
-  font-weight: 600;
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    font-weight: 600;
 }
 
 div.top-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
 }
 
 nav.topnav a.menu-contact {
-  color: blue;
-}
+    color: blue;
+  }
 
 /**************
 ****LOGO BREAK*****
