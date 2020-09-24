@@ -178,6 +178,7 @@ div.top-menu {
 nav.topnav a.menu-contact {
     color: blue;
   }
+
 /**************
 ****LOGO BREAK*****
 **************/
@@ -187,29 +188,63 @@ nav.topnav a.menu-contact {
     background-color:#33272a;
     border: 4px solid #D27F47;
     border-radius: 5%;
+    margin: 0 2%;
+    height: 18vh;
 }
 
 .image-break img {
-    width: 65%;
-    height: 140px;
+    width: 85%;
+    height: 80px;
     border-radius: 20%;
     padding: 2% 0;
+    display: flex;
+    justify-content: center;
     
 }
+
+
+
 /**************
 ****CONTACT BOXES*****
 **************/
+
+.contact-container {
+    background: #F44E3180;
+}
 .contact-container p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 3rem;
     margin-bottom: 2%;
+    
 }
 
 .customer-container {
+    position: relative;
+    overflow: hidden;
     margin-left: 15%;
     margin-right: 15%;
+}
+
+.customer-container p, a, address {
+    position: relative;
+    z-index: 2;}
+
+.customer-container:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('images/Wunderlist_Logo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
 }
 
 .customer-container div {
