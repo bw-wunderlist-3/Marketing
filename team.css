@@ -143,6 +143,10 @@ h3 {
   color: #594A4E
 }
 
+/* body {
+  background-color: rgba(199, 199, 199, 0.418);
+} */
+
 /**************
 ****HEADER*****
 **************/
@@ -165,6 +169,7 @@ nav.topnav {
   align-items: center;
   height: 8vh;
   margin: 0 4%;
+  background-color: #ffffff
 }
 
 nav.topnav a {
@@ -195,8 +200,8 @@ nav.topnav a.menu-contact {
   align-items: center;
   height: 60vh;
   /* margin-top: 1%; */
-  background-color: rgba(233, 233, 233, 0.377);
-  /* background-color: gray; */
+  background-color: #ffffff
+    /* background-color: gray; */
 }
 
 div.bio-hero div.logo {
@@ -251,6 +256,7 @@ p.hero-text {
   width: 100%;
   height: 120vh;
   border-radius: 25px;
+  background-color: #ffffff
 }
 
 .bio-block {
@@ -264,6 +270,10 @@ p.hero-text {
 
 .bio-block h2 {
   margin: 0;
+}
+
+.bio-block h3 {
+  font-size: 2.2rem;
 }
 
 
@@ -283,6 +293,15 @@ p.hero-text {
   margin: 2%;
   border-radius: 50rem;
   padding: 1%;
+}
+
+.bio a {
+  text-decoration: none;
+  color: #f44e31;
+}
+
+.bio p {
+  padding: .1rem 1rem;
 }
 
 /**************
@@ -310,15 +329,15 @@ footer {
   padding: 6px;
 }
 
-.footer-container h3:hover {
-  background: #ff8ba7;
-  color: rgba(233, 233, 233, 0.377);
-  ;
+.footer-container div h3 a:hover {
+  /* background: #e9e9e9; */
+  color: white;
+  text-decoration: none;
 }
 
 .footer-container a {
   text-decoration: none;
-  color: rgba(233, 233, 233, 0.377);
+  color: #F44E31;
 }
 
 .social-container {
@@ -378,6 +397,10 @@ footer {
   div.top-menu a {
     margin: 0 3%;
   }
+
+  .bio p {
+    padding: .1rem 8rem;
+  }
 }
 
 @media (max-width:500px) {
@@ -399,5 +422,9 @@ footer {
 
   nav.topnav {
     width: 75%;
+  }
+
+  .bio p {
+    padding: .1rem 10rem;
   }
 }
