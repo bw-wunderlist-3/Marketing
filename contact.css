@@ -219,8 +219,6 @@ nav.topnav a.menu-contact {
     overflow: hidden;
     margin-left: 15%;
     margin-right: 15%;
-    /* background-image: url('images/Wunderlist_Logo.png'), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ;
-    background-size: contain; */
 }
 
 .customer-container p, a, address {
